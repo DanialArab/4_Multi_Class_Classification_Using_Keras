@@ -2,7 +2,7 @@
 
 In this project the datasets from the 4th week of Machine Learning class, offered by Prof. Andrew Ng from Stanford University, was used to build a convolutional neural network to recognize the handwritten digits. The dataset is a subset of the MNIST handwritten digit dataset (http://yann.lecun.com/exdb/mnist/).
 
-Although Octave was suggested for this class assignment, here the problem was solved through Python using Keras library. The training and validation accuracy was shown in Fig. 1. 
+Although Octave was suggested for this class assignment, here the problem was solved through Python using Keras library. The training and validation accuracy is shown in Fig. 1. 
 
 ![plot](https://user-images.githubusercontent.com/54812742/138943711-8da751c1-93bf-4402-a824-7a8c0c36aefd.png)
 
