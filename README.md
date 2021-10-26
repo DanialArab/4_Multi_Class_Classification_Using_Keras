@@ -19,3 +19,9 @@ The model prediction for the above handwritten digits are shoen in Fig. 3.
 ![result](https://user-images.githubusercontent.com/54812742/138944219-7e066452-e51f-453e-87d9-bf75c770b6d8.PNG)
 
 Fig. 3: Model results 
+
+References:
+
+[1] Sreenivas Bhattiprolu's youtube channel (143 - Multiclass classification using Keras), https://www.youtube.com/watch?v=obOjpVdO3gY
+
+[2] Machine Learning Course offered by Coursera, https://www.coursera.org/learn/machine-learning
