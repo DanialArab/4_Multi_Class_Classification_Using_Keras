@@ -33,11 +33,11 @@ Fig. 3: Convolutional Neural Network Model predictions
 <a name="2"></a>
 # Neural Network -- working with the unrolled data of images
 
-In this approach, the images of 20 by 20 by 1 are unrolled as 400-dimensional vectors. So, the input layer is of the size 400 units. In this case model is built of different layers of neural networks. The hidden layer, the second layer, has 25 units and there would be 10 output units (corresponding to the 10 digit classes). 
+In this approach, the images of 20 by 20 by 1 are unrolled as 400-dimensional vectors. So, the input layer is of the size 400 units. In this case model is built of different layers of neural networks. The hidden layer, the second layer, has 25 units and there would be 10 output units (corresponding to the 10 digit classes). The model architecture is shown in Fig. 4. 
 
 ![1](https://user-images.githubusercontent.com/54812742/139000637-32e3d397-824d-42dd-8fcf-8e310510da11.PNG)
 
-Fig. 4: Neural Network Structure [1]
+Fig. 4: Neural Network architecture [1]
 
 One slice from the testing dataset, never seen by the model, was shown in Fig. 5. 
 
@@ -50,6 +50,8 @@ The neural network model predictions for the above handwritten digits are shown 
 ![3](https://user-images.githubusercontent.com/54812742/139001070-4ac429d9-8e36-4e26-b80c-82d6ad0eed2e.PNG)
 
 Fig. 6: Neural Network model predictions  
+
+In this case, 1000 epochs leads to an accuracy of 0.87. 
 
 References:
 
