@@ -28,13 +28,28 @@ The model predictions for the above handwritten digits are shown in Fig. 3.
 
 ![result](https://user-images.githubusercontent.com/54812742/138944219-7e066452-e51f-453e-87d9-bf75c770b6d8.PNG)
 
-Fig. 3: Model predictions  
+Fig. 3: Convolutional Neural Network Model predictions  
 
 <a name="2"></a>
 # Neural Network -- working with the unrolled data of images
 
+In this approach, the images of 20 by 20 by 1 are unrolled as 400-dimensional vectors. So, the input layer is of the size 400 units. In this case model is built of different layers of neural networks. The hidden layer, the second layer, has 25 units and there would be 10 output units (corresponding to the 10 digit classes). 
 
+![1](https://user-images.githubusercontent.com/54812742/139000637-32e3d397-824d-42dd-8fcf-8e310510da11.PNG)
 
+Fig. 4: Neural Network Structure [1]
+
+One slice from the testing dataset, never seen by the model, was shown in Fig. 5. 
+
+![2](https://user-images.githubusercontent.com/54812742/139000905-e89c2aca-0a9c-4710-9d5b-2b842897df80.png)
+
+Fig. 5: 10 datapoints from the testing dataset
+
+The neural network model predictions for the above handwritten digits are shown in Fig. 6.
+
+![3](https://user-images.githubusercontent.com/54812742/139001070-4ac429d9-8e36-4e26-b80c-82d6ad0eed2e.PNG)
+
+Fig. 6: Neural Network model predictions  
 
 References:
 
