@@ -64,12 +64,13 @@ Logistic regression model is available in sklearn library (sklearn.linear_model)
 Fig. 7:Solvers of logistic regression model [3]
 
 The compatibility of each solver and the regularization is summarized in Fig. 7 (e.g., Elastic-Net regularization, where both L1 and L2 penalty terms are added, is only supported by the ‘saga’ solver [3]. 
-In this project, because we have 10 different classes, corresponding to 10 digits (0 to 9) the problem is multi class classification. To do this multi class classification, one-vs-rest classification is applied meaning a binary problem is fit for each label. This is achieved through setting the “multi_class” parameter of the Logistic regression model to ‘ovr’. The confusion matrix is shown in Fig. 8. As shown in Fig. 8, the model predicts the labels very well: for example, digit 0 was labeled correctly for 253 times, while digit 3 is mislabeled 19 times as 5. 
+In this project, because we have 10 different classes, corresponding to 10 digits (0 to 9) the problem is multi class classification. To do this multi class classification, one-vs-rest classification is applied meaning a binary problem is fit for each label. This is achieved through setting the “multi_class” parameter of the Logistic regression model to ‘ovr’. The confusion matrix is shown in Fig. 8. As shown in Fig. 8, the model predicts the labels very well: for example, digit 0 was labeled correctly for 255 times, while digit 7 is mislabeled 13 times as 9. 
 
-![1](https://user-images.githubusercontent.com/54812742/139168121-307fa810-d3e9-4428-9cc4-274d7d98ff5d.png)
+![1](https://user-images.githubusercontent.com/54812742/139168692-64a03f8b-9e26-4c69-bc17-e876cb1b06c5.png)
 
 Fig. 8: Confusion Matrix
 
+The model score is obtained as 0.9 meaning the prediction is correct 90%. 
 
 References:
 
