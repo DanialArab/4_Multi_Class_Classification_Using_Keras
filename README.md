@@ -8,6 +8,7 @@ Although Octave was suggested for this class assignment, here the problem was so
 
 1. [Convolutional Neural Network -- working with the images](#1)
 2. [Neural Network -- working with the unrolled data of images](#2)
+3. [Logistic Regression (one-vs-rest classification)-- working with the unrolled data of images](#3)
 
 <a name="1"></a>
 # Convolutional Neural Network working with the images
@@ -53,9 +54,27 @@ Fig. 6: Neural Network model predictions
 
 In this case, 1000 epochs leads to an accuracy of 0.87. 
 
+<a name="3"></a>
+# Logistic Regression (one-vs-rest classification)-- working with the unrolled data of images
+
+Logistic regression model is available in sklearn library (sklearn.linear_model) and can fit binary, One-vs-Rest, or multinomial logistic regression with optional L_1, L_2 or Elastic-Net regularization [3]. The solvers of the logistic regression model are “liblinear”, “newton-cg”, “lbfgs”, “sag” and “saga”, which are compared in Fig. 7. 
+
+![2](https://user-images.githubusercontent.com/54812742/139168098-622ea424-9e30-4172-a3fc-b11944ac49d7.PNG)
+
+Fig. 7:Solvers of logistic regression model
+
+The compatibility of each solver and the regularization is summarized in Fig. 7 (e.g., Elastic-Net regularization, where both L1 and L2 penalty terms are added, is only supported by the ‘saga’ solver [3]. 
+In this project, because we have 10 different classes, corresponding to 10 digits (0 to 9) the problem is multi class classification. To do this multi class classification, one-vs-rest classification is applied meaning a binary problem is fit for each label. This is achieved through setting the “multi_class” parameter of the Logistic regression model to ‘ovr’. The confusion matrix is shown in Fig. 8. As shown in Fig. 8, the model predicts the labels very well: for example, digit 0 was labeled correctly for 253 times, while digit 3 is mislabeled 19 times as 5. 
+
+![1](https://user-images.githubusercontent.com/54812742/139168121-307fa810-d3e9-4428-9cc4-274d7d98ff5d.png)
+
+Fig. 8: Confusion Matrix
+
+
 References:
 
 [1] Machine Learning Course offered by Coursera, https://www.coursera.org/learn/machine-learning
 
 [2] Sreenivas Bhattiprolu's youtube channel (143 - Multiclass classification using Keras), https://www.youtube.com/watch?v=obOjpVdO3gY
 
+[3] https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression 
